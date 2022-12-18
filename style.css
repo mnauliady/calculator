@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+  text-align: center;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  padding-top: 10px;
+}
+
+.container {
+  display: grid;
+  background-color: slategray;
+  height: 410px;
+  width: 320px;
+  border: 5px solid white;
+  margin: 50px auto 0 auto;
+  border-radius: 30px;
+}
+
+.screen {
+  height: 50px;
+  width: 295px;
+  margin: 10px auto 10px auto;
+  border-radius: 20px;
+}
+
+input.input-screen[type="text"] {
+  padding-left: 20px;
+  justify-content: center;
+  height: 20px;
+  width: 245px;
+  font-size: smaller;
+  font-weight: bold;
+  background-color: seashell;
+  color: darkgray;
+  border: 0;
+  box-sizing: border-box;
+}
+
+input.result-screen[type="text"] {
+  padding-left: 20px;
+  height: 30px;
+  width: 245px;
+  font-size: xx-large;
+  color: gray;
+  font-weight: bolder;
+  background-color: seashell;
+  border: 0;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  font-size: x-large;
+  font-weight: bold;
+  color: darkslategray;
+  font-family: "Courier New", Courier, monospace;
+  /* border-radius: 10px; */
+  height: 50px;
+  /* width: 50px; */
+}
+
+.input-button {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  border: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  gap: 2px;
+  padding-bottom: 240px;
+}
+
+.span-row-2 {
+  grid-row: span 2;
+}
+
+.span-column-2 {
+  grid-column: span 2;
+}
+
+.operation {
+  background-color: lightblue;
+}
+
+#del {
+  background-color: orange;
+  font-size: xx-large;
+}
+
+#clear {
+  background-color: red;
+}
+
+#equal {
+  background-color: darkturquoise;
+  height: 102px;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+button:active {
+  opacity: 70%;
+}
